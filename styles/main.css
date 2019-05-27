@@ -1,0 +1,293 @@
+body {
+  margin: 0;
+}
+b { 
+  font-weight: bold;
+}
+/*--navigatie--*/
+.topnav {
+  overflow: hidden;
+  background-color: #E8C11B;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: 'Nunito', sans-serif;
+  font-size: 19px;
+  font-weight: 500;
+}
+
+.topnav .icon {
+  display: none;
+}
+/*---------bannerfoto's--------*/
+.banner {
+  height: 170px;
+  background-color: #E8C11B;
+}
+
+#wb{
+  background-image: url('../img/wh.png');
+}
+#pib{
+  background-image: url('../img/pih.png');
+}
+#acb{
+  background-image: url('../img/ach.png');
+}
+#vrb{
+  background-image: url('../img/vrh.png');
+}
+#arb{
+  background-image: url('../img/arh.png');
+}
+/*----------titels---------*/
+
+h1 /*---titel in banner---*/{
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 50px;
+  color: white;
+}
+h2{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 40px; 
+  margin-bottom: -30px;
+}
+#hn1 /*--assignments---*/{
+  color: #EA9919;
+  text-align: right;
+  padding-right: 0px;
+}
+
+#hn2/*--research---*/{
+  color: #E292C6;
+  text-align: left;
+  padding-left: 0px;
+}
+
+#hn3 /*--reflect---*/{
+  color: #5EB4EB;
+  text-align: right;
+  padding-right: 0px;
+}
+
+#hn4 /**/{
+  color: #93BC7B;
+  text-align: left;
+  padding-left: 0px;
+}
+
+h5{
+  margin: auto;
+  text-align: center;
+  padding-top: 25px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
+  color: white;
+}
+
+h5:hover{
+  color: #E8C11B;
+}
+
+#top {
+  color: #E8C11B;
+  letter-spacing: 3px;
+   font-family: 'Nunito', sans-serif;
+}
+p > h6 /*-----tussenkopje-----*/{
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 2px;
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  display: inline-block;
+}
+
+
+.block {
+  height: 120px;
+  width: 80%;
+  background-color: #E8C11B;
+  padding: 5px;
+  display: block;
+  margin: auto;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+.main {
+  margin: 30px;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+ul {
+  margin: 30px;
+  font-size: 14px;
+}
+
+
+
+/*---------foto & video--------*/
+
+
+#fotome {
+  margin-top: 30px;
+  max-width: 250px;
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 100%;
+}
+
+.intro{
+  margin: 30px;
+}
+
+#foto {
+  width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+}
+
+iframe {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+video {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+/*--------------topic-------*/
+.assignment p{
+  background-color: #F4CD90;
+  padding: 15px; 
+}
+
+.research p{
+ background-color: #F1D6E8;
+ padding: 15px;
+}
+
+
+.reflect p{
+ background-color: lightblue;
+ padding: 15px;
+}
+.extra p{
+  background-color: #E0F1D6;
+  padding: 15px;
+}
+
+
+.imgbox, #imgbox{
+  max-width:350px ;
+  display: inline-block;
+  padding: 10px;
+  padding-right: 20px;
+  margin-right:auto; 
+  margin-left:auto;
+  float: left;
+}
+
+/*-------------MediaQueries---------------*/
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .main{
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  ul {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  #foto {
+    width: 400px;
+  }
+
+  video {
+    width: 400px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .main {
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+
+  ul {
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+}
+
+
+
+/*---styleguide --*/
+
+#E8C11B geel nav
+
+#EA9919 geel assignment titel 
+#F4CD90 geel assignment achtergrond
+
+#E292C6 roze research titel
+#F1D6E8 roze research achtergrond
+
+#5EB4EB blauw refect titel 
+light blue blauw refelct achtergrond
+
+#E0F1D6 groen achtergrond
+#93BC7B groen titel
+
+
+background-image: url('../img/pih.png');
+
+fonts :
+ menu : font-family: 'Nunito', sans-serif;
+ titels: font-family: 'Montserrat', sans-serif;
+ platte tekst : font-family: 'Open Sans', sans-serif;
+
+
