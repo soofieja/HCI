@@ -16,8 +16,8 @@ function listeners() {
 	$("#excursion").click(function(){
 		navigate("excursion.html");
 	});
-	$("#lab-weeks").click(function(){
-		navigate("lab-weeks.html");
+	$("#labweeks").click(function(){
+		navigate("labweeks.html");
 	});
 	$(".wearables").click(function(){
 		navigate("wearables.html");
@@ -34,11 +34,11 @@ function listeners() {
 	$(".arduino").click(function(){
 		navigate("arduino.html");
 	});
-	$(".computer").click(function(){
-		navigate("computer.html");
+	$(".vr-environments").click(function(){
+		navigate("vr-environments.html");
 	});
-	$(".unity").click(function(){
-		navigate("unity.html");
+	$(".computervision").click(function(){
+		navigate("computervision.html");
 	});
 	
 }

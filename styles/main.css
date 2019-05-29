@@ -46,6 +46,16 @@ b {
 #arb{
   background-image: url('../img/arh.png');
 }
+#eb{
+  background-image: url('../img/eh.png');
+}
+#vreb{
+  background-image: url('../img/vreh.png');
+}
+#cvb{
+  background-image: url('../img/cvh.png');
+}
+
 /*----------titels---------*/
 
 h1 /*---titel in banner---*/{
@@ -112,6 +122,9 @@ p > h6 /*-----tussenkopje-----*/{
   font-weight: bold;
   display: inline-block;
 }
+h8{
+  font-weight: 800;
+}
 
 
 .block {
@@ -151,18 +164,39 @@ ul {
   border-radius: 100%;
 }
 
+#fotonemo{
+  margin-top: 30px;
+  max-width: 250px;
+  width: 35%;
+  height: 35%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 100%;
+}
+
 .intro{
   margin: 30px;
 }
 
 #foto {
-  width: 300px;
+  width: 400px;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 15px;
   margin-bottom: 15px;
 }
 
+.imgbox, #imgbox{
+  max-width:380px ;
+  display: inline-block;
+  padding: 10px;
+  padding-right: 20px;
+  margin-right:auto; 
+  margin-left:auto;
+  float: left;
+}
 iframe {
   display: block;
   margin-left: auto;
@@ -173,6 +207,8 @@ video {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  max-width: 400px;
+
 }
 
 
@@ -193,21 +229,13 @@ video {
  background-color: lightblue;
  padding: 15px;
 }
-.extra p{
+.extra p {
   background-color: #E0F1D6;
   padding: 15px;
 }
 
 
-.imgbox, #imgbox{
-  max-width:350px ;
-  display: inline-block;
-  padding: 10px;
-  padding-right: 20px;
-  margin-right:auto; 
-  margin-left:auto;
-  float: left;
-}
+
 
 /*-------------MediaQueries---------------*/
 @media screen and (max-width: 600px) {
@@ -215,6 +243,13 @@ video {
   .topnav a.icon {
     float: right;
     display: block;
+  }
+  video{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+
   }
 }
 
@@ -244,7 +279,7 @@ video {
   }
 
   #foto {
-    width: 400px;
+    max-width: 500px;
   }
 
   video {
@@ -261,6 +296,15 @@ video {
   ul {
     margin-left: 200px;
     margin-right: 200px;
+  }
+  video{
+     display: inline-block;
+     float: right;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 600px;
+    max-height: auto;
+
   }
 }
 
