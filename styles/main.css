@@ -1,9 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,900|Nunito:400,700,900|Open+Sans:400,700|Poppins:400,800|Roboto+Mono:700&display=swap');
 body {
   margin: 0;
+  min-width: 320px;
 }
-b { 
-  font-weight: bold;
-}
+
 /*--navigatie--*/
 .topnav {
   overflow: hidden;
@@ -57,6 +57,13 @@ b {
 }
 
 /*----------titels---------*/
+b { 
+  font-weight: 700;
+}
+c{
+  font-family: 'Roboto Mono', monospace;
+  font-size: 90%;
+}
 
 h1 /*---titel in banner---*/{
   margin: auto;
@@ -65,12 +72,16 @@ h1 /*---titel in banner---*/{
   font-family: 'Montserrat', sans-serif;
   font-size: 50px;
   color: white;
+    text-transform: uppercase;
 }
 h2{
   font-family: 'Montserrat', sans-serif;
   font-weight: 800;
   font-size: 40px; 
-  margin-bottom: -30px;
+  margin-bottom: -10px;
+}
+h3{
+   font-weight: 700;
 }
 #hn1 /*--assignments---*/{
   color: #EA9919;
@@ -103,6 +114,7 @@ h5{
   font-family: 'Montserrat', sans-serif;
   font-size: 40px;
   color: white;
+    text-transform: uppercase;
 }
 
 h5:hover{
@@ -112,7 +124,7 @@ h5:hover{
 #top {
   color: #E8C11B;
   letter-spacing: 3px;
-   font-family: 'Nunito', sans-serif;
+  font-weight: 900px;
 }
 p > h6 /*-----tussenkopje-----*/{
   font-family: 'Montserrat', sans-serif;
@@ -141,7 +153,7 @@ h8{
 .main {
   margin: 30px;
   font-size: 16px;
-  font-family: 'Open Sans', sans-serif;
+ font-family: 'Poppins', sans-serif;
 }
 
 ul {
@@ -178,18 +190,16 @@ ul {
 .intro{
   margin: 30px;
 }
-
-#foto {
-  width: 400px;
+#screenshot{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  align-content: center;
+
 }
 
-.imgbox, #imgbox{
-  max-width:380px ;
+.imgbox{
+  max-width:90%;
   display: inline-block;
   padding: 10px;
   padding-right: 20px;
@@ -210,26 +220,36 @@ video {
   max-width: 400px;
 
 }
+#floatright{
+  float: right;
+  max-width: 90%;
+  display: inline-block;
+  padding: 10px;
+  padding-right: 20px;
+  margin-right: auto;
+  margin-left: auto;
+ 
+}
 
 
 
 /*--------------topic-------*/
-.assignment p{
+.assignment{
   background-color: #F4CD90;
   padding: 15px; 
 }
 
-.research p{
+.research{
  background-color: #F1D6E8;
  padding: 15px;
 }
 
 
-.reflect p{
+.reflect {
  background-color: lightblue;
  padding: 15px;
 }
-.extra p {
+.extra {
   background-color: #E0F1D6;
   padding: 15px;
 }
@@ -237,8 +257,9 @@ video {
 
 
 
-/*-------------MediaQueries---------------*/
-@media screen and (max-width: 600px) {
+/*---------------------------------------MediaQueries---------------*/
+/*-------------MediaQueries tot  kleine tablet---------------------------*/
+@media screen and (max-width: 600px)  {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
     float: right;
@@ -248,8 +269,14 @@ video {
     display: block;
     margin-left: auto;
     margin-right: auto;
-
-
+  }
+  #foto {
+  width: 90%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
   }
 }
 
@@ -267,7 +294,7 @@ video {
   }
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 600px) /*-------------vanaf ---------------*/{
   .main{
     margin-left: 100px;
     margin-right: 100px;
@@ -279,8 +306,34 @@ video {
   }
 
   #foto {
-    max-width: 500px;
+  width: 350px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
   }
+  .imgbox{
+  max-width:350px;
+  display: block;
+  padding: 10px;
+  padding-right: 20px;
+  margin-right:auto; 
+  margin-left:auto;
+  float: left;
+}
+#floatright{
+  float: right;
+  max-width: 350px;
+  display: inline-block;
+  padding: 10px;
+  padding: 20px;
+  margin-right: auto;
+  margin-left: auto;
+ 
+}
+
+}
 
   video {
     width: 400px;
@@ -304,7 +357,14 @@ video {
     margin-right: auto;
     max-width: 600px;
     max-height: auto;
-
+  }
+  #foto {
+  width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
   }
 }
 
@@ -326,12 +386,15 @@ light blue blauw refelct achtergrond
 #E0F1D6 groen achtergrond
 #93BC7B groen titel
 
+#96A9DE paars
 
 background-image: url('../img/pih.png');
 
 fonts :
  menu : font-family: 'Nunito', sans-serif;
- titels: font-family: 'Montserrat', sans-serif;
- platte tekst : font-family: 'Open Sans', sans-serif;
+ titels: font-family: 'Montserrat', sans-serif, font-weight:  700;
+ platte tekst : font-family: 'Poppins', sans-serif;
+ code weergeven : font-family: 'Roboto Mono', monospace;
+
 
 
