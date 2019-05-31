@@ -8,6 +8,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,900|Nunito|Open+Sans" rel="stylesheet">
 	</head>
 	<body>
+
 		<div class="topnav" id="myTopnav">
   			<a href="index.html" id="home">Home</a>
   			<a href="topics.html" id="topics">Topics</a>
@@ -21,6 +22,7 @@
 		</div>
 
 		<div class="main">
+			<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 			<p>Na het downloaden van het Arduino  software en het uitpakken van de hardware kit kon in aan de slag. Wat me direct al opviel is dat alles heel klein is en dat je heel secuur te werk moet gaan. In de eerste opdrachten werden er kennis gemaakt  de interface van de software, Arduino bord en met het breadboard. 
 			De werking van de software doet me denken aan  JavaScript.
 		</p>
@@ -29,51 +31,71 @@
 		<section class="assignment">
 				
 					<div>
-					<p><b>EXERCISE 3C</b></br>
+					<p><b>EXERCISE 3C: Blink multiple LEDs</b></br>
 						Opdracht 3  stond in het teken van twee lampjes laten  branden van een lampje, en bij 3c moest je twee lampjes laten knipperen op 		verschillende momenten. 
 						Allereerst is het belangrijk dat je de lampjes, de resistor en de jumper wires goed plaats. Vervolgens kun je in  functies en loops aanmaken in  op je computer die er voor gaat zorgen dat je lampjes gaan branden. 
 						Het maken van een loop zorgt er net zoals bij JavaScript dat het constant blijft gaan. De regel <c>digitalWrite(13,HIGH); </c>   zorgt er voor dat het gene wat gelinkt is in 13 aangaat.
-						  <c>LOW</c>   zorgt ervoor dat  deze weer uit gaat.  Het toevoegen van een delay(1000)  zorgt een pauze van 1 sec.  
-					 </br>  </br> 
-					<img src="img/arduino3c.png" alt="screenshot van opdracht 3 c" id="foto">
-					<videopreload controls>
-						<source src="images/3c.MOV">
-					</video>
+						  <c>LOW</c>   zorgt ervoor dat  deze weer uit gaat.  Het toevoegen van een <c>delay(1000) </c> zorgt voor vertraging en dus een pauze van 1 sec.  
+					 	</br>  </br> 
+						<img src="img/arduino3c.png" alt="screenshot van opdracht 3 c" id="foto">
+						<iframe src="https://player.vimeo.com/video/339432829"  frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></br>
 
-					<b>EXERCISE 4C</b></br>
+						<b>EXERCISE 4C : Fade LED – Analog Output</b></br>
+						Bij opdracht vier was het nu de bedoeling om  de felheid van de lampjes te regelen.  Bij 4c was het de bedoeling dat het wanneer het ene lampje langzaam uitgaat, de ander langzaam aangaat.
+	 					Met deze opdracht kon ik verder gaan met de onderdelen van opdracht drie alleen heb ik de jumpwires  verplaatst van 13 naar 10 ( het groene lampje) en  12 naar 9 ( het gele lampje) 
+						</br>
+						In de loop die  geeft ik aan dat de  brightness van het lampje van 0 (helemaal uit) naar 255 (helemaal aan) moet gaan  en andersom  en dit herhaal ik om  het ene lampje langzaam aan te zetten en op datzelfde moment het andere lampje uit te zetten. 
+						<img src="img/arduino4c.png" alt="screenshot van opdracht 3 c" id="foto">
+						<iframe src="https://player.vimeo.com/video/339434260"  frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
+						
+						
+
+						</br>
+						<b>EXERCISE 6C : Controlling a LED	with a potmeter</b></br>
+						Bij opdracht 6  was het nu de bedoeling om de lampjes te ‘besturen’ middels de potmeter ik heb bij deze opdracht gebruikt gemaakt van dezelfde onderdelen  als de voorgaande en heb ik hierbij de potmeter en om deze aan te sluiten  3 jumper wires toegevoegd.  De opdracht bij 6c was om de  het ene lampje te laten gaan branden als de ander uitging door middel van aan de potmeter te draaien.
+
+						<img src="img/arduino6c.png" alt="screenshot van opdracht 6 c" id="foto">
+						<iframe src="https://player.vimeo.com/video/339435840" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></br>
+						<b>EXERCISE 7C : Control the LED	with light </b></br>
+						Bij opdracht 7 was het  de bedoeling om de lampjes nu te ‘besturen’ middels invallend licht door de LDR resistor. Deze reageert op binnenkomend licht.  Voor deze opdracht  werd de potmeter ingeruild voor de LDR resistor 
+						<img src="img/arduino7c.png" alt="screenshot van opdracht 7 c" id="foto">
+						<iframe src="https://player.vimeo.com/video/339436613" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+						</br>
+						<b>EXERCISE 8 : Voltage	Divider </b></br>			
 					</p>
-					</div>
-
 			</section>
-			<h2 id="hn2">Assignment 8 t/m 10</h2>
+			
+			<h2 id="hn2">Assignment second week </h2>
 			<section class="research">
-				
 				<p>
-					<img class="imgbox" src="img/.jpg" align="middle"/>
-					<b></b></br>
-						
-					</br></br>		
-			</section>
+					<b>EXERCISE 9 : Arduino	and	Processing </b></br>
+					Met opdracht 9 moest ik met twee programma’s werken, met Arduino en Processing. Door deze twee programma’s samen  te gebruiken, kunnen er echte elektronische invoerapparaten voor een digitale omgeving en omgekeerd gemaakt worden. Er werd ons gevraagd of we de sensor konden inzetten om op het schermpje via processing iets konden weergeven.  Ik heb  in processing  met de regel  <c>arc(150, 150, 100, 100, 0, (float(sensorReading)/40.5), PIE);</c> een taart weten te maken die uit meer stukken bestaat zodra je de  potmeter begint te draaien. 
 
-			<h2 id="hn3">Arduino assignment 11 t/m 13</h2>
-			<section class="reflect">
-				
-				<p>
-						
-				</p>
-			</section>
-
-			<h2 id="hn4">Arduino assignment 12 </h2>
-			<section class="extra">
-				
-					<p>De opdracht van 3 stond in het teken van twee lampjes laten knipperen op verschillende momenten.  </br>
-						Allereerst is het belangrijk dat je de lampjes, de resistor en de jumper wires goed plaats. Vervolgens kun je in  functies en loops aanmaken in  op je computer die er voor gaat zorgen dat je lampjes gaan branden. 
-						Het maken van een loop zorgt er net zoals bij JavaScript dat het constant blijft gaan. De regel <b> digitalWrite(13, HIGH); </b>   zorgt er voor dat het gene wat gelinkt is in 13 aangaat  LOW   zorgt ervoor dat  deze weer uit gaat.  Het toevoegen van een delay(1000)  zorgt een pauze van 1 sec.  
-					 </br> 
+					<img src="img/arduino9.png" alt="screenshot van opdracht 9" id="foto">
+					<iframe src="https://player.vimeo.com/video/339416805"  alt="9c" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></br>
+					<b>EXERCISE 10 F : Buttons</b></br>
+					Met opdracht 10 ben ik aan de slag gegaan  met een kop, want een lichtmeter en een potmeter is  hartstikke leuk maar een simpele knop werkt natuurlijk heel fijn om een lampje aan te zetten. Vervolgens  moest ik er een tweede knop toevoegen en er voor zorgen dat het lampje ging branden wanneer een knopje was ingedrukt en het andere knopje niet . 
+					<img src="img/arduino10f.png" alt="screenshot van opdracht 10f" id="foto">	
 					
-
-					</p>
+					</br></br>	
+					<b>EXERCISE 11B : Servomotor</b></br>
+					<img src="img/arduino11b.png" alt="screenshot van opdracht 11b" id="foto">
+					
+					</br></br>
+					<b>EXERCISE 12B : Controlling the servo with inputs</b></br>
+					<img src="img/arduino12b.png" alt="screenshot van opdracht 12b" id="foto">
+					
+					</br></br>
+					<b>EXERCISE 13B : Sound </b></br>	
+					<img src="img/arduino13b.png" alt="screenshot van opdracht 13b" id="foto">
 			</section>
+
+			<p>
+			</br></br>	
+			</br></br>
+			</p>
+				
 		</div>
 		<script src="scripts/jquery-3.2.1.min.js">
 		</script>
