@@ -4,23 +4,24 @@ body {
   min-width: 320px;
 }
 #myBtn {
+ font-family: 'Nunito', sans-serif;
   display: none;
   position: fixed;
   bottom: 20px;
-  right: 30px;
+  right: 2px;
   z-index: 99;
-  font-size: 12px;
+  font-size: 10px;
   border: none;
   outline: none;
-  background-color: #E8C11B;
+  background-color: #93BC7B;
   color: white;
   cursor: pointer;
-  padding: 10px;
+  padding: 6px;
   border-radius: 50px;
 }
 
 #myBtn:hover {
-  background-color: #555;
+  background-color: #5EB4EB;
 }
 
 /*--navigatie--*/
@@ -96,13 +97,13 @@ h1 {/*---titel in banner---*/
   line-height: 90%;
 
 }
-h2{
+h2/*---koppen assignment/resc en reflect---*/{
   font-family: 'Montserrat', sans-serif;
   font-weight: 800;
   font-size: 30px; 
   margin-bottom: -10px;
 }
-h3{
+h3 /*tussenkopjes */{
    font-weight: 700;
 }
 #hn1 /*--assignments---*/{
@@ -234,14 +235,13 @@ iframe {
 .imgbox{
   max-width:90%;
   display: inline-block;
-  padding: 10px;
-  padding-right: 20px;
+  padding: 0px;
+ 
   margin-right:auto; 
   margin-left:auto;
   float: left;
+  object-fit: contain;
 }
-
-
 
 #floatright{
   float: right;
@@ -252,7 +252,6 @@ iframe {
   margin-right: auto;
   margin-left: auto;
   vertical-align: middle;
- 
 }
 
 
@@ -266,8 +265,8 @@ iframe {
 .research{
  background-color: #F1D6E8;
  padding: 15px;
+ min-height: 300px;
 }
-
 
 .reflect {
  background-color: lightblue;
@@ -324,6 +323,22 @@ iframe {
     margin-right: 100px;
     font-size: 14px;
   }
+#myBtn {
+ font-family: 'Nunito', sans-serif;
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 40px;
+  z-index: 99;
+  font-size: 12px;
+  border: none;
+  outline: none;
+  background-color: #93BC7B;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50px;
+}
 
   ul {
     margin-left: 100px;
@@ -338,8 +353,8 @@ iframe {
   color: white;
   text-transform: uppercase;
 }
-  h2{
-    font-size: 40px;
+h2{   
+   font-size: 40px;
   }
 h5{
   margin: auto;
